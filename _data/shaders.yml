@@ -1,0 +1,14 @@
+- name: 'Tea'
+  path: assets/shaders/Tea.frag
+  description: "I wish I didn't break the cup"
+  texture: assets/shaders/Tea.png
+
+- name: 'Lovers'
+  path: assets/shaders/Lovers.frag 
+  description: "My best friend, I would love you better"
+  texture: assets/shaders/Lovers.png
+
+- name: 'Home'
+  path: assets/shaders/Home.frag
+  description: "We would have a comfort place"
+  texture: assets/shaders/Home.png

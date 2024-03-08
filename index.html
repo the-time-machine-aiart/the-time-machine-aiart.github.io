@@ -1,0 +1,39 @@
+---
+layout: shade
+title: The Time Machine AI Art
+---
+
+<div = class="center">
+    <h3>Simple questions take us back through time.</h3>
+    <!-- <p class="font-regular">Question 1:</p>  -->
+    <p class="font-light"> If you can go back in time, who would you want to meet? </p>
+    <!-- <p class="font-regular">Question 2:</p>  -->
+    <p class="font-light"> What would you do differently? </p>
+</div>
+<div class="spacing"></div>
+<div class="grid">
+    {% assign shaders = site.data.shaders | reverse %}
+    {% for shader in shaders %}
+    <div id="copy" class="grid-item center spacing font-heavy">                
+        <div class="shader">       
+            <!-- <a href={{ "/editor.html?file=" | append: shader.path|page.url|relative_url}}>          -->
+            <a href="assets/pages/{{ shader.name }}.html?name={{ shader.name }}&description={{ shader.description }}">
+            <!-- <a href={{ "/screen.html" }}> -->
+                <!-- <div class="shader-hover img"><i class="fas fa-cog fa-5x"></i></div>                 -->
+                <canvas class="glslCanvas" data-fragment-url="{{ shader.path }}" data-textures="{{ shader.texture }}" width="300" height="300"></canvas>
+            </a>
+        </div>
+        <div class="shader-menu">
+            <div class="left"><h3>{{ shader.name }}</h3></div>
+            <div></div>
+            <div class="right">
+                <nav>
+                    <a href="https://github.com/the-time-machine-aiart/blob/master/{{ shader.path }}"><i class="fas fa-file"></i></a>
+                    <!-- <a href={{ "/editor.html?file=" | append: shader.path| page.url | relative_url}}><i class="fas fa-cog"></i></a>                  -->
+                </nav>
+            </div>
+            <div class="left font-light"><h6>{{ shader.description }}</h6></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

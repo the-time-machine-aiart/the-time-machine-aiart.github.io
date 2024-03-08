@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Time Machine AI Art | the-time-machine-aiart.github.io</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The Time Machine AI Art" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="the-time-machine-aiart.github.io" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Time Machine AI Art" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"The Time Machine AI Art","name":"the-time-machine-aiart.github.io","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+            <link href="/assets/imgs/favicon.gif" rel="shortcut icon"/>
+            <link rel="stylesheet" href="assets/css/reset.css">
+            <link rel="stylesheet" href="assets/css/font.css">
+            <link rel="stylesheet" href="assets/css/all.css">
+            <script type="text/javascript" src="assets/js/glslCanvas.js"></script>
+            <style>
+                *
+                {
+                    margin:0;
+                    padding:0;
+                    color:#000000;
+                }
+                div
+                {
+                    /* border: solid 1px red; */
+                }
+                .container
+                {
+                    width: 100%;
+                    max-width: 960px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .v_space
+                {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+
+                .left {
+                    text-align: left;
+                }
+
+                .right {
+                    text-align: right;
+                }
+
+                .center {
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .grid
+                {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(320px,0fr));
+                    /* grid-row-gap: 30px; */
+                    justify-content: space-evenly;
+                }
+                .grid-item
+                {
+                    /* width:90%; */                    
+                    justify-self: stretch;
+                }
+                .img
+                {
+                    /* display: block; */
+                    max-width: 100%;
+                    max-height: 100%;       
+                    /* backface-visibility: visible; */
+                    border-radius:5px;            
+                }
+                .shader
+                {
+                    position: relative;                    
+                }
+                .shader-hover
+                {   
+                    background-color: white;
+                    position:absolute;
+                    width:100%;
+                    height:100%;
+
+                    opacity: 0.0;              
+                   -webkit-backface-visibility: hidden;     /*  hack for safair */
+
+                    -webkit-transition: opacity 0.3s ease-out;  
+                    -moz-transition: opacity 0.3s ease-out;  
+                    -ms-transition: opacity 0.3s ease-out;  
+                    -o-transition: opacity 0.3s ease-out;  
+                        transition: opacity 0.3s ease-out;   
+
+                }
+                .shader-hover i
+                {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);  
+                    color: black;
+                }
+                .shader-hover:hover
+                {
+                    opacity: .3;
+                    visibility:visible;
+                    transition-delay:0s;
+                    cursor: pointer;
+                }                
+                .shader-menu
+                {
+                    display:grid;
+                    grid-template-columns: 100px 1fr 1fr;
+                    /* height:30px; */
+                    padding-top: 10px;
+                    align-items: center;
+                }
+                .shader-menu a
+                {
+                    padding-left: 3px;
+                }
+                .shader-menu a:hover,
+                {
+                    color:rgb(105, 185, 255);
+                }
+
+                .shader-menu .fas:hover,.shader-menu .fab:hover,.shader-menu .fa:hover
+                {
+                    color:rgb(105, 185, 255);
+                }
+                .spacing
+                {
+                    padding:12px;
+                }
+
+                a
+                {
+                    text-decoration: none;
+                    font-weight: 900;
+                    color:#222222;
+                }   
+                a:hover
+                {
+                    color:rgb(105, 185, 255);
+                }                         
+                .line
+                {
+                    background-color: #b6b6b6;
+                    height: 1px;
+                    width: calc(100% - 24px);
+                    margin-left: 12px;
+                    margin-right: 12px;
+                } 
+                
+                footer
+                {
+                    padding-top: 40px;
+                }
+                .fade a{
+                    opacity: .4;
+                    -webkit-transition: opacity 0.3s ease-out;  
+                    -moz-transition: opacity 0.3s ease-out;  
+                    -ms-transition: opacity 0.3s ease-out;  
+                    -o-transition: opacity 0.3s ease-out;  
+                        transition: opacity 0.3s ease-out;                       
+                }   
+                .fade a:hover{
+                    opacity: 1;
+                }
+                .menu
+                {
+                    display:grid;
+                    grid-template-columns: 2fr 0fr 1fr;                    
+                    align-items: center;
+                }
+            </style>
+    </head>
+    <body>
+        <header class="container">
+            <div class="menu">
+                <div class="left spacing"><h1>The Time Machine AI Art</h1></div> <br>
+                <div class="left spacing"><h3>by Romrawin Chumpu</h3></div>
+            </div>
+        </header> 
+        
+        
+        <main id="base" class="container v_space">
+            <div = class="center">
+    <h3>Simple questions take us back through time.</h3>
+    <!-- <p class="font-regular">Question 1:</p>  -->
+    <p class="font-light"> If you can go back in time, who would you want to meet? </p>
+    <!-- <p class="font-regular">Question 2:</p>  -->
+    <p class="font-light"> What would you do differently? </p>
+</div>
+<div class="spacing"></div>
+<div class="grid">
+    
+    
+    <div id="copy" class="grid-item center spacing font-heavy">                
+        <div class="shader">       
+            <!-- <a href=/editor.html?file=assets/shaders/Home.frag>          -->
+            <a href="assets/pages/Home.html?name=Home&description=We would have a comfort place">
+            <!-- <a href=/screen.html> -->
+                <!-- <div class="shader-hover img"><i class="fas fa-cog fa-5x"></i></div>                 -->
+                <canvas class="glslCanvas" data-fragment-url="assets/shaders/Home.frag" data-textures="assets/shaders/Home.png" width="300" height="300"></canvas>
+            </a>
+        </div>
+        <div class="shader-menu">
+            <div class="left"><h3>Home</h3></div>
+            <div></div>
+            <div class="right">
+                <nav>
+                    <a href="https://github.com/the-time-machine-aiart/blob/master/assets/shaders/Home.frag"><i class="fas fa-file"></i></a>
+                    <!-- <a href=/editor.html?file=assets/shaders/Home.frag><i class="fas fa-cog"></i></a>                  -->
+                </nav>
+            </div>
+            <div class="left font-light"><h6>We would have a comfort place</h6></div>
+        </div>
+    </div>
+    
+    <div id="copy" class="grid-item center spacing font-heavy">                
+        <div class="shader">       
+            <!-- <a href=/editor.html?file=assets/shaders/Lovers.frag>          -->
+            <a href="assets/pages/Lovers.html?name=Lovers&description=My best friend, I would love you better">
+            <!-- <a href=/screen.html> -->
+                <!-- <div class="shader-hover img"><i class="fas fa-cog fa-5x"></i></div>                 -->
+                <canvas class="glslCanvas" data-fragment-url="assets/shaders/Lovers.frag" data-textures="assets/shaders/Lovers.png" width="300" height="300"></canvas>
+            </a>
+        </div>
+        <div class="shader-menu">
+            <div class="left"><h3>Lovers</h3></div>
+            <div></div>
+            <div class="right">
+                <nav>
+                    <a href="https://github.com/the-time-machine-aiart/blob/master/assets/shaders/Lovers.frag"><i class="fas fa-file"></i></a>
+                    <!-- <a href=/editor.html?file=assets/shaders/Lovers.frag><i class="fas fa-cog"></i></a>                  -->
+                </nav>
+            </div>
+            <div class="left font-light"><h6>My best friend, I would love you better</h6></div>
+        </div>
+    </div>
+    
+    <div id="copy" class="grid-item center spacing font-heavy">                
+        <div class="shader">       
+            <!-- <a href=/editor.html?file=assets/shaders/Tea.frag>          -->
+            <a href="assets/pages/Tea.html?name=Tea&description=I wish I didn't break the cup">
+            <!-- <a href=/screen.html> -->
+                <!-- <div class="shader-hover img"><i class="fas fa-cog fa-5x"></i></div>                 -->
+                <canvas class="glslCanvas" data-fragment-url="assets/shaders/Tea.frag" data-textures="assets/shaders/Tea.png" width="300" height="300"></canvas>
+            </a>
+        </div>
+        <div class="shader-menu">
+            <div class="left"><h3>Tea</h3></div>
+            <div></div>
+            <div class="right">
+                <nav>
+                    <a href="https://github.com/the-time-machine-aiart/blob/master/assets/shaders/Tea.frag"><i class="fas fa-file"></i></a>
+                    <!-- <a href=/editor.html?file=assets/shaders/Tea.frag><i class="fas fa-cog"></i></a>                  -->
+                </nav>
+            </div>
+            <div class="left font-light"><h6>I wish I didn't break the cup</h6></div>
+        </div>
+    </div>
+    
+</div>
+        </main>
+
+        <footer class="container">
+        </footer>  
+        
+        
+    </body>
+</html>
