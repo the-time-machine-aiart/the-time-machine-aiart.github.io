@@ -19,7 +19,8 @@
 			}
 			div
 			{
-				/* border: solid 1px red; */
+				/* border: solid 1px red;
+				width: 100%; */
 			}
 			.container
 			{
@@ -28,6 +29,16 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
+			.screen
+			{
+				display: grid;
+            	height: 100%;
+        	}
+			.center-fit {
+				max-width: 100%;
+				max-height: 100vh;
+				margin: auto;
+        	}
 
 			.v_space
 			{
@@ -180,7 +191,7 @@
                 <div class="left spacing"><h3>by Romrawin Chumpu</h3></div>
             </div>
         </header> 
-		<div class="center spacing">
+		<div class="center screen spacing">
 			<h1><div id="name" class="center"></div></h1>
 			<h3><p id="description" class="center"></p></h3>
 			{{ content }}
