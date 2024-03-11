@@ -8,7 +8,7 @@ By Romrawin (Jin) Chumpu
 
 This work is generated in March, 2024.
 
-![page-cover][/page-cover.png]
+![page-cover][page-cover.png]
 
 The artwork is a combination of images generated prompts from two questions:
 
@@ -17,7 +17,7 @@ The artwork is a combination of images generated prompts from two questions:
 
 These questions are intentionally used to prompt the audience and evoke the theme of memories in "The Time Machine."
 
-After generating the image, we process it and combine it with a GLSL shader for display on the website. This procedural interaction incorporates mathematical equations and artistic reflections. The resulting artwork can be appreciated by considering both the generated images and the emotions evoked by the text prompts.
+After generating the image, we process and combine pixels with a GLSL shader for display on the website. This procedural interaction incorporates mathematical equations and artistic reflections. The resulting artwork can be appreciated by considering both the glimpse of generated images and the emotions evoked by the text prompts.
 
 
 [Click here](https://the-time-machine-aiart.github.io/) will take you to see the artworks.

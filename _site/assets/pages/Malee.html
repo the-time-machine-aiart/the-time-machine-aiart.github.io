@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -194,7 +194,7 @@
 		<div class="center screen spacing">
 			<h1><div id="name" class="center"></div></h1>
 			<h3><p id="description" class="center"></p></h3>
-			{{ content }}
+			<canvas class="glslCanvas center-fit" data-fragment-url="../shaders/Malee.frag" data-textures="../shaders/Malee.png" width="1200" height="800"></canvas>
 		</div>
 		<script type="text/javascript">
 			const urlParams = new URLSearchParams(window.location.search);

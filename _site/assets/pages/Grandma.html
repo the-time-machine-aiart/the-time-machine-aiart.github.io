@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,8 @@
 			{
 				margin:0;
 				padding:0;
-				color:#000000;
+				color:white;
+				background-color: #171e22;
 			}
 			div
 			{
@@ -187,14 +188,14 @@
 	<body>
 		<header class="container">
             <div class="menu">
-                <div class="left spacing"><h1>The Time Machine AI Art</h1></div><br>
+                <div class="left spacing"><h1>The Time Machine AI Art</h1></div> <br>
                 <div class="left spacing"><h3>by Romrawin Chumpu</h3></div>
             </div>
         </header> 
 		<div class="center screen spacing">
 			<h1><div id="name" class="center"></div></h1>
 			<h3><p id="description" class="center"></p></h3>
-			{{ content }}
+			<canvas class="glslCanvas center-fit" data-fragment-url="../shaders/Grandma.frag" data-textures="../shaders/Grandma.png" width="1200" height="800"></canvas>
 		</div>
 		<script type="text/javascript">
 			const urlParams = new URLSearchParams(window.location.search);

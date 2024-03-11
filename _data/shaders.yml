@@ -12,3 +12,19 @@
   path: assets/shaders/Home.frag
   description: "We would have a comfort place"
   texture: assets/shaders/Home.png
+
+- name: 'Grandma'
+  path: assets/shaders/Grandma.frag
+  description: "I want to visit you more often"
+  texture: assets/shaders/Grandma.png
+
+- name: 'A'
+  path: assets/shaders/A.frag
+  description: "I would want to see you again"
+  texture: assets/shaders/A.png
+
+- name: 'Malee'
+  path: assets/shaders/Malee.frag
+  description: "I would take great care of you"
+  texture: assets/shaders/Malee.png
+
