@@ -8,7 +8,11 @@ By Romrawin (Jin) Chumpu
 
 This work is generated in March, 2024.
 
+<<<<<<< HEAD
 ![page-cover][page-cover.png]
+=======
+![page-cover](page-cover.png)
+>>>>>>> bdb5f24f3d7ee87fbe06341169cd889ba0c4ef0a
 
 The artwork is a combination of images generated prompts from two questions:
 
