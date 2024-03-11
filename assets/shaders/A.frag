@@ -25,7 +25,7 @@ vec3 palette( float t, vec4 image) {
     vec3 c = vec3(1.0, 1.0, 1.0);
     vec3 d = vec3(0.2, 0.7, 0.8);
 
-    return a + b*cos( 5.*(c*t+d) ) + sin(image.r*0.2*t) + sin(image.b+a+t);
+    return a + b*cos( 5.*(c*t+d) ) + vec3(sin(image.r*0.5+t), 0, 0) + vec3(0, sin(image.g*0.2*t), 0) + vec3(0, 0, (image.b*0.5+t));
 }
 
 void main() {
@@ -35,11 +35,11 @@ void main() {
     float f_temporal = 64.0;
     float a_temporal = 0.0;
     
-    vec2 s = vec2(sqrt(4.0), sqrt(4.0)); s = rotate(s, 0.01*u_time, 1.0, 1.0);
-    vec2 j = vec2(sqrt(4.0), sqrt(4.0)); j = rotate(s, -0.01*u_time, 1.0, 1.0);
+    vec2 s = vec2(sqrt(2.0), sqrt(2.0)); s = rotate(s, 0.01*u_time, 1.0, 1.0);
+    vec2 j = vec2(sqrt(2.0), sqrt(2.0)); j = rotate(s, -0.01*u_time, 1.0, 1.0);
     uv = vec2(dot(uv, s), dot(uv, j));
     
-    uv = rotate(uv, 3.14 * (10.0/4.0), 1.0, 1.0);
+    uv = rotate(uv, 3.14 * (90./4.0), 2.0, 90.0);
     vec2 uv0 = uv;
     
     // image color
@@ -52,7 +52,7 @@ void main() {
         vec3 col = palette(length(uv0) + i*.5 + u_time*0.01, image);
         d = sin(d*5.0 + u_time)/5.0;
         d = abs(d);
-        d = pow(0.5 / d, 1.5);
+        d = pow(0.005 / d, 1.5);
 
         finalColor += col * d;
     }
