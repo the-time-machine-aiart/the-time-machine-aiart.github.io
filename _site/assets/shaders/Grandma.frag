@@ -16,7 +16,7 @@ vec3 palette( float t, vec4 image) {
     vec3 c = vec3(1.0, 1.0, 1.0);
     vec3 d = vec3(0.2,0.7,0.8);
 
-    return a + b*cos( 5.*(c*t+d) ) + sin(image.r*0.2*t) + sin(image.b+a+t);
+    return a + b*cos( 5.*(c*t+d) ) + vec3(sin(image.r*0.4*t), cos(image.g*0.1), image.b*0.2);
 }
 void main () {
     vec2 uv = (gl_FragCoord.xy * 2. - u_resolution.xy )/u_resolution.y;
@@ -31,7 +31,7 @@ void main () {
 
         float d = length(uv) * exp(-length(uv0));
         vec3 col = palette(length(uv0) + i*.4 + u_time*.4, image);
-        d = sin(d*10. + u_time)/8. + (image.g/255.);
+        d = cos(d*10. + u_time)/8.;
         d = abs(d);
         d = pow(0.01 / d, 1.2);
 
